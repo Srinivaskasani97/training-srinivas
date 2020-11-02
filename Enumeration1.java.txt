@@ -1,0 +1,26 @@
+import java.util.Enumeration;
+import java.util.Vector;
+public class Enumeration1 
+{
+	public static void main(String[] args) 
+  	{	
+		Vector<String> hs = new Vector<String>();
+		hs.add("L");
+		hs.add("H");
+		hs.add("P");
+		hs.add("U");
+		hs.add(" ");
+		hs.add("A");
+		hs.add("E");
+		hs.add("S");
+		hs.add(" ");
+	 	System.out.println(hs);
+	        Enumeration<String> ee=hs.elements();
+	        while(ee.hasMoreElements()) 
+                {
+	            System.out.println(ee.nextElement());
+   		}
+		
+	}
+	
+}

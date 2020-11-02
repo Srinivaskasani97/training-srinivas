@@ -1,0 +1,17 @@
+import java.util.LinkedHashMap;
+public class LinkedhashMapEx 
+{
+	public static void main(String[] args)
+        {	
+		LinkedHashMap<Integer, Integer> map = new LinkedHashMap<Integer, Integer>();           
+	        map.put(10,20);    
+	        map.put(10,10);    
+	        map.put(12,10);
+	        map.put(11,10);
+	        map.put(13,12);
+	       System.out.println("Keys: "+map.keySet());   
+	       System.out.println("Values: "+map.values());   
+	       System.out.println("Key-Value pairs: "+map.entrySet()); 
+	}
+
+}

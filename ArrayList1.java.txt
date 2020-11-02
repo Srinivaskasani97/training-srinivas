@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+public class ArrayList1
+{
+	public static void main(String[] args)
+        {
+		ArrayList<Integer> hs=new ArrayList<Integer>();
+		hs.add(35);
+		hs.add(22);
+		hs.add(0);
+		hs.add(15);
+		hs.add(12);
+		hs.add(0);
+		hs.add(7);
+		hs.add(37);
+		hs.add(56);
+		hs.add(63);
+		
+		
+		System.out.println(hs);
+
+	}
+
+}

@@ -1,0 +1,26 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+public class Iterator1 
+{
+	public static void main(String[] args)
+	{
+		ArrayList<Integer> a=new ArrayList<>();
+		{
+			a.add(13);
+			a.add(88);
+			a.add(57);
+			a.add(80);
+			a.add(60);
+			a.add(95);
+			a.add(66);
+			a.add(34);
+			System.out.println(a);
+			Iterator i=a.iterator();
+			while(i.hasNext()) 
+			{
+				int j=(Integer)i.next();
+				System.out.println(j);
+			}
+		}
+	}
+}

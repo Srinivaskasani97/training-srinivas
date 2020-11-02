@@ -1,0 +1,16 @@
+import java.util.LinkedList;
+public class Listex
+{
+	public static void main(String[] args)
+        {
+		LinkedList<Integer> hs=new LinkedList<Integer>();
+		hs.add(66);
+		hs.add(13);
+		hs.add(46);
+		hs.add(76);
+		hs.add(82);
+		hs.add(49);
+		hs.add(21);	
+		System.out.println(hs);	
+	}
+}
