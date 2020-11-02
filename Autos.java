@@ -1,4 +1,5 @@
 import java.io.*;
+import java.util.*;
 
 class Auto {
 	String model_name;
@@ -17,13 +18,22 @@ public class Autos
 	public static void main(String[] args)
 	{
 		Auto TatapassAuto=new Auto();
-		TatapassAuto.model_name="Tata_petrol";
-		TatapassAuto.Auto_width=22;
-		TatapassAuto.Auto_height="4 feet";
-		TatapassAuto.Auto_weight=500;
-		TatapassAuto.Auto_topSpeed=80;
-		TatapassAuto.company_name="Tata Motors";
-		TatapassAuto.showroom_location="Attili";		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the passenger Auto details:\n");
+		System.out.print("Enter Model Name:");
+		TatapassAuto.model_name=sc.next();
+		System.out.print("\nEnter Auto Width:");
+		TatapassAuto.Auto_width=sc.nextInt();
+		System.out.print("\nEnter Auto Height:");
+		TatapassAuto.Auto_height=sc.next();
+		System.out.print("\nEnter Auto Weight:");
+		TatapassAuto.Auto_weight=sc.nextInt();
+		System.out.print("\nEnter Auto Top speed:");
+		TatapassAuto.Auto_topSpeed=sc.nextInt();
+		System.out.print("\nEnter Auto Comapany Name:");
+		TatapassAuto.company_name=sc.next();
+		System.out.print("\nEnter Location:");
+		TatapassAuto.showroom_location=sc.next();		
 		System.out.println("============TatapassAuto details =============");
 		System.out.println("model name is : " +TatapassAuto. model_name);
 		System.out.println("Auto width  is : " +TatapassAuto.Auto_width);
@@ -37,13 +47,22 @@ public class Autos
 
 
 		Auto MahindratruckAuto=new Auto();
-		MahindratruckAuto.model_name="MahindratruckAuto_petrol";
-		MahindratruckAuto.Auto_width=35;
-		MahindratruckAuto.Auto_height="10 feet";
-		MahindratruckAuto.Auto_weight=800;
-		MahindratruckAuto.Auto_topSpeed=70;
-		MahindratruckAuto.company_name="Mahindra";
-		MahindratruckAuto.showroom_location="Tanuku";		
+		
+		System.out.println("Enter the Truck Auto details:\n");
+		System.out.print("Enter Model Name:");
+		MahindratruckAuto.model_name=sc.next();
+		System.out.print("\nEnter Auto Width:");
+		MahindratruckAuto.Auto_width=sc.nextInt();
+		System.out.print("\nEnter Auto Height:");
+		MahindratruckAuto.Auto_height=sc.next();
+		System.out.print("\nEnter Auto Weight:");
+		MahindratruckAuto.Auto_weight=sc.nextInt();
+		System.out.print("\nEnter Auto Top speed:");
+		MahindratruckAuto.Auto_topSpeed=sc.nextInt();
+		System.out.print("\nEnter Auto Comapany Name:");
+		MahindratruckAuto.company_name=sc.next();
+		System.out.print("\nEnter Location:");
+		MahindratruckAuto.showroom_location=sc.next();		
 		System.out.println("============MahindratruckAuto details =============");
 		System.out.println("model name is : " +MahindratruckAuto. model_name);
 		System.out.println("Auto width  is : " +MahindratruckAuto.Auto_width);

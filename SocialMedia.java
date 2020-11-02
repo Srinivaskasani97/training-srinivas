@@ -1,11 +1,12 @@
 import java.io.*;
+import java.util.*;
 
 class Tweeter
 {
     int tweets;
     int followers;
     String name;
-    int number;
+    long number;
     String account;
     int following;
 }
@@ -14,7 +15,7 @@ class Tiktok
     int videos;
     int followers;
     String name;
-    int number;
+    long number;
     int likes;
     int comments;
     int share;
@@ -24,12 +25,20 @@ class SocialMedia
     public static void main(String args[])
     {
         Tweeter srinivas=new Tweeter();
-        srinivas.tweets=20;
-        srinivas.followers=200;
-        srinivas.name="Ramarao";
-        srinivas.number=89768543;
-        srinivas.account="Srinu";
-        srinivas.following=346;
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter your tweeter account details:");
+	System.out.print("Enter no of tweets:");
+        srinivas.tweets=sc.nextInt();
+	System.out.print("\nEnter no of followers:");
+        srinivas.followers=sc.nextInt();
+	System.out.print("\nEnter name:");
+        srinivas.name=sc.next();
+	System.out.print("\nEnter Mobile number:");
+        srinivas.number=sc.nextLong();
+	System.out.print("\nEnter username:");
+        srinivas.account=sc.next();
+	System.out.print("\nEnter no of following:");
+        srinivas.following=sc.nextInt();
         System.out.println("------Tweeter Details-----");
         System.out.println("tweets:"+srinivas.tweets);
         System.out.println("followers:"+srinivas.followers);
@@ -38,13 +47,21 @@ class SocialMedia
         System.out.println("account:"+srinivas.account);
         System.out.println("following="+srinivas.following + "\n");
         Tiktok krishna=new Tiktok();
-        krishna.videos=15;
-        krishna.followers=145;
-        krishna.name="Krish";
-        krishna.number=12325678;
-        krishna.likes=256;
-        krishna.comments=13;
-        krishna.share=38;
+	System.out.println("Enter your tiktok account details:");
+	System.out.print("Enter no of videos:");
+        krishna.videos=sc.nextInt();
+	System.out.print("\nEnter no of followers:");
+        krishna.followers=sc.nextInt();
+	System.out.print("\nEnter name:");
+        krishna.name=sc.next();
+	System.out.print("\nEnter Mobile number:");
+        krishna.number=sc.nextLong();
+	System.out.print("\nEnter no of likes:");
+        krishna.likes=sc.nextInt();
+	System.out.print("\nEnter no of comments:");
+        krishna.comments=sc.nextInt();
+	System.out.print("\nEnter no of shares:");
+        krishna.share=sc.nextInt();
         System.out.println("-------Tiktok Details-----");
         System.out.println("videos:" +krishna.videos);
         System.out.println("followers:"+krishna.followers);
