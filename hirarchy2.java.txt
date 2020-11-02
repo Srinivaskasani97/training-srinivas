@@ -1,0 +1,33 @@
+class Employee
+{
+void display()
+{
+   System.out.println("Motivity Labs");
+}
+}
+class Developer extends Employee
+{
+void name()
+{
+super.display();
+System.out.println("Rohit Developer");
+}
+}
+class Qualityassurance extends Employee
+{
+void name()
+{
+   super.display();
+   System.out.println("Uday Qualityassurance");
+}
+}
+class Hierarchical
+{
+public static void main(String args[])
+{
+  Dev dev=new Dev();
+  Qa qa=new Qa();
+  dev.name();
+  qa.name();
+}
+}

@@ -1,0 +1,25 @@
+interface Business
+{
+public void employees();
+public void manager();
+}
+class Swiggy implements Business
+{
+public void employees()
+{
+System.out.println("total number of employees are 1000");
+}
+public void managers()
+{
+System.out.println("total number of managers are 10");
+}
+}
+class Interface2
+{
+public static void main(String args[])
+{
+Business b=new Business();
+b.employees();
+b.managers();
+}
+}

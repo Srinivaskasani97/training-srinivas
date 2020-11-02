@@ -1,0 +1,31 @@
+class Human
+{  
+void describes()
+{
+System.out.println("Relation");
+}  
+}  
+class Father extends Human
+{  
+void act()
+{
+System.out.println("he is an actor");
+}  
+}  
+class Son extends Father
+{  
+void movie()
+{
+System.out.println("he loves fun");
+}  
+}  
+class MultiInheritance1
+{  
+public static void main(String args[])
+{  
+Son ob=new Son();  
+ob.describes();  
+ob.act();  
+ob.movie();  
+}
+}

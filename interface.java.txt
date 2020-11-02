@@ -1,0 +1,25 @@
+interface Vehicle
+{
+void petrol();
+void air();
+}
+class Bike implements Vehicle
+{
+public void petrol()
+{
+System.out.println("petrol is for bike");
+}
+public void air()
+{
+System.out.println("air is for bike");
+}
+}
+class Interface
+{
+public static void main(String args[])
+{
+Bike honda =new Bike();
+honda.petrol();
+honda.air();
+}
+}

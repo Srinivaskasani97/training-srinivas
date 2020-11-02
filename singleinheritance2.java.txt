@@ -1,0 +1,23 @@
+class Whatsapp
+{
+public void message()
+{
+System.out.println("message");
+}
+}
+class Whatsapp1 extends Whatsapp
+{
+public void call()
+{
+System.out.println("call");
+}
+}
+class SingleInheritance
+{
+public static void main(String args[])
+{
+Whatsapp1 w1=new Whatsapp1();
+w1.message();
+w1.call();
+}
+}

@@ -1,0 +1,49 @@
+class Moneytransfer                                                
+{
+public void pay() 
+{
+System.out.println("we can do payment");
+}
+}
+class Whatsapp extends Moneytransfer                                
+{
+public void calls()
+{
+System.out.println("we can call");
+}
+public void message()
+{
+System.out.println("we can text");
+}
+}
+class Googlepay extends Moneytransfer
+{
+}
+class Phonepe extends Moneytransfer
+{
+}
+class Paytm extends Moneytransfer
+{
+public void shopping()
+{
+System.out.println("we can do shopping");
+}
+}
+class Hirarchy
+{
+public static void main(String[]args)
+{
+Whatsapp w=new Whatsapp();
+w.pay();
+w.calls();
+w.message();
+Googlepay g=new Googlepay();
+g.pay();
+Phonepe p=new Phonepe();
+p.pay();
+Paytm pm=new Paytm();
+pm.pay();
+pm.shopping();
+}
+}
+

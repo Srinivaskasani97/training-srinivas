@@ -1,0 +1,24 @@
+class Animal
+{  
+
+void jump()
+{
+System.out.println("jumps..");
+}  
+}  
+class Cat extends Animal
+{  
+void meow()
+{
+System.out.println("moew...");
+}  
+}  
+class TestInheritance
+{  
+public static void main(String args[])
+{  
+Cat c=new Cat();  
+c.moew();  
+c.jump();  
+}
+} 
