@@ -1,0 +1,27 @@
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+
+public class MapEntry
+{
+	public static void main(String[] args) 
+	{
+		HashMap<Integer,String> hm = new HashMap<>();
+		hm.put(1,"vasu");
+		hm.put(2,"divya");
+		hm.put(3,"srinu");
+		hm.put(4,"sravya");
+		hm.put(5,"roshan");
+		hm.put(6,"ramya");
+		Set<Map.Entry<Integer,String>> s= hm.entrySet();
+		Iterator<Map.Entry<Integer, String>> i = s.iterator();
+		while(i.hasNext()) 
+		{
+			Map.Entry<Integer, String> entry=i.next();
+			System.out.println(entry.getKey()+" "+entry.getValue());
+		}
+
+	}
+
+}
